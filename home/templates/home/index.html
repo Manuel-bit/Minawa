@@ -182,15 +182,17 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="case_active owl-carousel">
+                                {% for product_item in product %}
                                     <div class="single_case">
                                             <div class="case_thumb">
-                                                    <img src="img/case/1.png" alt="">
+                                                    <img src="{{product_item.product_img.url}}" alt="">
                                                 </div>
                                         <div class="case_heading">
-                                                <span>Finance Solution</span>
-                                                <h3><a href="#">Consumer Products Consulting</a></h3>
+                                                <span>{{product_item.product_solution}}</span>
+                                                <h3><a href="#">{{product_item.product_title}}</a></h3>
                                         </div>
                                     </div>
+                                {% endfor %}
                             </div>
                             
                         </div>
