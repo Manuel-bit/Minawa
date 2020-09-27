@@ -1,1 +1,1 @@
-web: gunicorn msomihub.wsgi
+web: gunicorn minawa.wsgi
