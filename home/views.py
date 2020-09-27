@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import CarouselProducts
+from .models import CarouselProducts, Product
 from .forms import QuotationForm
 
 # Create your views here.
@@ -19,4 +19,5 @@ def Home(request):
     return render(request, 'home/index.html', context)
 
 def Products(request):
-    return render(request, 'home/products.html')
+    products = Product.objects.all()
+    return render(request, 'home/products.html', {'products':products})

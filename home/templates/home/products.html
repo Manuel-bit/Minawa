@@ -25,22 +25,24 @@
                     </div>
                 </div>
             <div class="row grid">
-                <div class="col-xl-4 grid-item cat1 cat3">
-                    <div class="single_case">
-                        <div class="case_thumb">
-                            <img src="img/case/1.png" alt="">
-                        </div>
-                        <div class="case_heading">
-                            <span>Finance Solution</span>
-                            <h3><a href="#">Consumer Products Consulting</a></h3>
+                {% for products_item in products %}
+                    <div class="col-xl-4 grid-item cat1 cat3">
+                        <div class="single_case">
+                            <div class="case_thumb">
+                                <img src="{{products_item.product_img.url}}" alt="">
+                            </div>
+                            <div class="case_heading">
+                                <span>{{product_item.product_description}}</span>
+                                <h3><a href="#">{{product_item.product_title}}</a></h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {% endfor %}
             </div>
             <div class="row">
                 <div class="col-xl-12">
                     <div class="more_close_btn text-center">
-                        <a href="case_details.html" class="boxed-btn3-line">More Cases</a>
+                        <a href="#" class="boxed-btn3-line">More Cases</a>
                     </div>
                 </div>
             </div>
