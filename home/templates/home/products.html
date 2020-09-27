@@ -1,0 +1,49 @@
+{% extends 'home/base.html' %}
+{% block content %}
+    <div class="bradcam_area bradcam_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Our Products</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case_study_area case_page">
+        <div class="container">
+            <div class="row">
+                    <div class="col-xl-12">
+                        <div class="portfolio-menu text-center">
+                            <button class="active" data-filter="*">All</button>
+                            <button data-filter=".cat1">Finance</button>
+                            <button data-filter=".cat2">Startup</button>
+                            <button data-filter=".cat3">Business</button>
+                            <button data-filter=".cat4">Travel</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="row grid">
+                <div class="col-xl-4 grid-item cat1 cat3">
+                    <div class="single_case">
+                        <div class="case_thumb">
+                            <img src="img/case/1.png" alt="">
+                        </div>
+                        <div class="case_heading">
+                            <span>Finance Solution</span>
+                            <h3><a href="#">Consumer Products Consulting</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="more_close_btn text-center">
+                        <a href="case_details.html" class="boxed-btn3-line">More Cases</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
