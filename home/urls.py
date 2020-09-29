@@ -7,6 +7,7 @@ urlpatterns = [
 
     url(r'^$', views.Home, name="landing_page"),
     url(r'^products/$', views.Products, name="products"),
+    url(r'^About_Us/$', views.AboutUs, name='about'),
     
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

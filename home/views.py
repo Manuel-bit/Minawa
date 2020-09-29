@@ -21,3 +21,6 @@ def Home(request):
 def Products(request):
     products = Product.objects.all()
     return render(request, 'home/products.html', {'products':products})
+
+def AboutUs(request):
+    return render(request, 'home/about.html')

@@ -1540,8 +1540,11 @@ h3 {
 /* line 41, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .case_study_area.case_page .single_case {
   margin-bottom: 40px;
+  
 }
-
+.single_case{
+  background-color: white;
+}
 /* line 45, ../../Arafath/CL/CL October/216. Consulting/HTML/scss/_counter.scss */
 .case_study_area .border_bottom {
   border-bottom: 1px solid #E8E8E8;
